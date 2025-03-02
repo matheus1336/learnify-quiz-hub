@@ -1,3 +1,4 @@
+
 export interface Question {
   id: number;
   text: string;
@@ -20,260 +21,260 @@ export const testData: TestData = {
   placementTest: [
     {
       id: 1,
-      text: "______ ela é? Ela é minha irmã.",
-      options: ["Quem", "O que", "Onde", "Por que"],
+      text: "______ is she? She is my sister.",
+      options: ["Who", "What", "Where", "Why"],
       correctAnswer: 0
     },
     {
       id: 2,
-      text: "Eu ______ gosto de café.",
-      options: ["não", "não", "não é", "não são"],
+      text: "I ______ like coffee.",
+      options: ["don't", "not", "am not", "are not"],
       correctAnswer: 0
     },
     {
       id: 3,
-      text: "Eles ______ assistindo TV agora.",
-      options: ["estão", "está", "estou", "ser"],
+      text: "They ______ watching TV now.",
+      options: ["are", "is", "am", "be"],
       correctAnswer: 0
     },
     {
       id: 4,
-      text: "Ela ______ à loja.",
-      options: ["ir", "vai", "foi", "ido"],
+      text: "She ______ to the store.",
+      options: ["go", "goes", "went", "gone"],
       correctAnswer: 2
     },
     {
       id: 5,
-      text: "Qual palavra é sinônimo de 'feliz'?",
-      options: ["Triste", "Bravo", "Alegre", "Cansado"],
+      text: "Which word is a synonym for 'happy'?",
+      options: ["Sad", "Angry", "Joyful", "Tired"],
       correctAnswer: 2
     },
     {
       id: 6,
-      text: "______ você foi à festa? Ontem à noite.",
-      options: ["Quando", "Onde", "Por que", "Quem"],
+      text: "______ did you go to the party? Yesterday evening.",
+      options: ["When", "Where", "Why", "Who"],
       correctAnswer: 0
     },
     {
       id: 7,
-      text: "Se eu ______ rico, compraria uma casa grande.",
-      options: ["sou", "fosse", "serei", "for"],
+      text: "If I ______ rich, I would buy a big house.",
+      options: ["am", "were", "will be", "be"],
       correctAnswer: 1
     },
     {
       id: 8,
-      text: "Ela ______ aqui desde 2010.",
-      options: ["é", "foi", "tem estado", "têm estado"],
+      text: "She ______ here since 2010.",
+      options: ["is", "was", "has been", "have been"],
       correctAnswer: 2
     },
     {
       id: 9,
-      text: "O livro ______ por J.K. Rowling.",
-      options: ["escreve", "escreveu", "foi escrito", "está escrevendo"],
+      text: "The book ______ by J.K. Rowling.",
+      options: ["writes", "wrote", "was written", "is writing"],
       correctAnswer: 2
     },
     {
       id: 10,
-      text: "Eu gostaria de ______ nadar.",
-      options: ["saber", "soubesse", "sabido", "sabendo"],
+      text: "I would like ______ swim.",
+      options: ["to", "for", "at", "in"],
       correctAnswer: 0
     }
   ],
   books: {
     beginner: {
-      title: "Livro 1: Iniciante",
-      description: "Ideal para aqueles que estão começando a aprender inglês.",
+      title: "Book 1: Beginner",
+      description: "Ideal for those who are starting to learn English.",
       questions: [
         {
           id: 1,
-          text: "Qual é o seu _______?",
-          options: ["nome", "jogo", "fama", "mesmo"],
+          text: "What is your _______?",
+          options: ["name", "game", "fame", "same"],
           correctAnswer: 0
         },
         {
           id: 2,
-          text: "Eu ______ do Brasil.",
-          options: ["sou", "é", "são", "ser"],
+          text: "I ______ from Brazil.",
+          options: ["am", "is", "are", "be"],
           correctAnswer: 0
         },
         {
           id: 3,
-          text: "Ela _______ TV todos os dias.",
-          options: ["assiste", "assiste", "assistindo", "assistiu"],
+          text: "She _______ TV every day.",
+          options: ["watches", "watch", "watching", "watched"],
           correctAnswer: 0
         },
         {
           id: 4,
-          text: "______ é isso? É meu livro.",
-          options: ["O que", "Onde", "Quem", "Por que"],
+          text: "______ is this? It's my book.",
+          options: ["What", "Where", "Who", "Why"],
           correctAnswer: 0
         },
         {
           id: 5,
-          text: "Eu ______ gosto de comida apimentada.",
-          options: ["não", "não", "não é", "não são"],
+          text: "I ______ like spicy food.",
+          options: ["don't", "not", "am not", "are not"],
           correctAnswer: 0
         },
         {
           id: 6,
-          text: "Nós ______ estudantes.",
-          options: ["sou", "é", "somos", "ser"],
+          text: "We ______ students.",
+          options: ["am", "is", "are", "be"],
           correctAnswer: 2
         },
         {
           id: 7,
-          text: "______ ela tem um carro? Sim, ela tem.",
-          options: ["Ela", "Você", "Ele", "Eles"],
+          text: "______ she have a car? Yes, she does.",
+          options: ["Does", "Do", "Is", "Are"],
           correctAnswer: 0
         },
         {
           id: 8,
-          text: "Eu tenho ______ maçã.",
-          options: ["um", "uma", "o", "alguns"],
+          text: "I have ______ apple.",
+          options: ["a", "an", "the", "some"],
           correctAnswer: 1
         },
         {
           id: 9,
-          text: "Eles ______ jogando futebol agora.",
-          options: ["está", "estão", "estou", "ser"],
+          text: "They ______ playing soccer now.",
+          options: ["is", "are", "am", "be"],
           correctAnswer: 1
         },
         {
           id: 10,
-          text: "______ está o clima hoje? Está ensolarado.",
-          options: ["O que", "Como", "Onde", "Quando"],
+          text: "______ is the weather today? It's sunny.",
+          options: ["What", "How", "Where", "When"],
           correctAnswer: 1
         }
       ]
     },
     intermediate: {
-      title: "Livro 2: Intermediário",
-      description: "Para estudantes que já têm um conhecimento básico de inglês.",
+      title: "Book 2: Intermediate",
+      description: "For students who already have a basic knowledge of English.",
       questions: [
         {
           id: 1,
-          text: "Eu ______ vi esse filme antes.",
-          options: ["nunca", "já", "sempre", "frequentemente"],
+          text: "I ______ never seen that movie before.",
+          options: ["have", "has", "had", "having"],
           correctAnswer: 0
         },
         {
           id: 2,
-          text: "Ela ______ trabalhando aqui desde 2015.",
-          options: ["é", "foi", "tem estado", "têm estado"],
+          text: "She ______ working here since 2015.",
+          options: ["is", "was", "has been", "have been"],
           correctAnswer: 2
         },
         {
           id: 3,
-          text: "Se eu ______ você, aceitaria a oferta.",
-          options: ["sou", "fosse", "serei", "for"],
+          text: "If I ______ you, I would accept the offer.",
+          options: ["am", "were", "will be", "be"],
           correctAnswer: 1
         },
         {
           id: 4,
-          text: "Quando eu cheguei, o filme ______.",
-          options: ["começou", "começa", "tinha começado", "tem começado"],
+          text: "When I arrived, the movie ______.",
+          options: ["started", "starts", "had started", "has started"],
           correctAnswer: 2
         },
         {
           id: 5,
-          text: "Ela me perguntou ______ eu queria ir.",
-          options: ["que", "o que", "qual", "onde"],
+          text: "She asked me ______ I wanted to go.",
+          options: ["that", "what", "which", "where"],
           correctAnswer: 3
         },
         {
           id: 6,
-          text: "Este livro é ______ interessante do que aquele.",
-          options: ["mais", "o mais", "muito", "muitos"],
+          text: "This book is ______ interesting than that one.",
+          options: ["more", "most", "very", "much"],
           correctAnswer: 0
         },
         {
           id: 7,
-          text: "Você ______ levar um guarda-chuva. Está chovendo.",
-          options: ["deveria", "iria", "poderia", "pode"],
+          text: "You ______ take an umbrella. It's raining.",
+          options: ["should", "would", "could", "can"],
           correctAnswer: 0
         },
         {
           id: 8,
-          text: "Não sou tão alto ______ meu irmão.",
-          options: ["como", "quanto", "do que", "que"],
-          correctAnswer: 1
+          text: "I'm not as tall ______ my brother.",
+          options: ["as", "like", "than", "that"],
+          correctAnswer: 0
         },
         {
           id: 9,
-          text: "O hotel ______ ficamos era muito bom.",
-          options: ["que", "onde", "quando", "o que"],
+          text: "The hotel ______ we stayed was very nice.",
+          options: ["that", "where", "when", "which"],
           correctAnswer: 1
         },
         {
           id: 10,
-          text: "Ela ______ estar em casa. Acabei de vê-la na loja.",
-          options: ["deve", "não pode", "deveria", "pode"],
+          text: "She ______ be at home. I just saw her at the store.",
+          options: ["must", "can't", "should", "might"],
           correctAnswer: 1
         }
       ]
     },
     advanced: {
-      title: "Livro 3: Avançado",
-      description: "Para estudantes com um bom domínio do inglês que desejam dominar conceitos complexos.",
+      title: "Book 3: Advanced",
+      description: "For students with a good command of English who wish to master complex concepts.",
       questions: [
         {
           id: 1,
-          text: "Se eu soubesse do problema, ______ mais cedo.",
-          options: ["resolveria", "teria resolvido", "vou resolver", "tinha resolvido"],
+          text: "Had I known about the problem, I ______ it earlier.",
+          options: ["would solve", "would have solved", "will solve", "had solved"],
           correctAnswer: 1
         },
         {
           id: 2,
-          text: "Não só ______ atrasado, mas também esqueceu os documentos.",
-          options: ["ele estava", "estava ele", "ele é", "é ele"],
+          text: "Not only ______ late, but he also forgot the documents.",
+          options: ["was he", "he was", "he is", "is he"],
           correctAnswer: 0
         },
         {
           id: 3,
-          text: "O romance, ______ foi escrito no século 19, continua popular.",
-          options: ["que", "quem", "cujo", "o qual"],
+          text: "The novel, ______ was written in the 19th century, remains popular.",
+          options: ["which", "who", "whose", "whom"],
           correctAnswer: 0
         },
         {
           id: 4,
-          text: "Ela ______ ter saído já; o carro dela não está no estacionamento.",
-          options: ["deve", "pode", "deveria", "iria"],
+          text: "She ______ have left already; her car isn't in the parking lot.",
+          options: ["must", "may", "should", "would"],
           correctAnswer: 0
         },
         {
           id: 5,
-          text: "______ a chuva, o evento foi realizado ao ar livre.",
-          options: ["Apesar de", "Embora", "No entanto", "Mesmo"],
+          text: "______ the rain, the event was held outdoors.",
+          options: ["Despite", "Although", "However", "Even"],
           correctAnswer: 0
         },
         {
           id: 6,
-          text: "O assunto ______ o qual eles estavam debatendo é bastante complexo.",
-          options: ["sobre", "para", "com", "em"],
+          text: "The subject ______ they were debating is quite complex.",
+          options: ["about which", "which", "that", "on which"],
           correctAnswer: 0
         },
         {
           id: 7,
-          text: "Raramente ______ uma apresentação tão magnífica.",
-          options: ["eu vi", "vi eu", "eu tenho visto", "tenho visto eu"],
+          text: "Rarely ______ such a magnificent performance.",
+          options: ["have I seen", "I have seen", "I had seen", "had I seen"],
           correctAnswer: 0
         },
         {
           id: 8,
-          text: "O gerente, ______ com a nova proposta, decidiu aprová-la.",
-          options: ["impressionando", "impressionado", "impressionar", "tendo impressionado"],
+          text: "The manager, ______ with the new proposal, decided to approve it.",
+          options: ["impressing", "impressed", "impress", "having impressed"],
           correctAnswer: 1
         },
         {
           id: 9,
-          text: "Até o momento em que nos formarmos, ______ mais de 1000 horas estudando.",
-          options: ["gastaremos", "gastaríamos", "teremos gasto", "teríamos gasto"],
+          text: "By the time we graduate, we ______ over 1000 hours studying.",
+          options: ["will spend", "would spend", "will have spent", "would have spent"],
           correctAnswer: 2
         },
         {
           id: 10,
-          text: "Ela ______ ter terminado o projeto até agora.",
-          options: ["deveria", "deveria", "devendo", "deve"],
+          text: "She ______ have completed the project by now.",
+          options: ["should", "ought to", "ought", "is to"],
           correctAnswer: 1
         }
       ]
@@ -294,12 +295,12 @@ export const getLevelFromScore = (score: number): string => {
 export const getLevelTitle = (level: string): string => {
   switch (level) {
     case "beginner":
-      return "Iniciante (Livro 1)";
+      return "Beginner (Book 1)";
     case "intermediate":
-      return "Intermediário (Livro 2)";
+      return "Intermediate (Book 2)";
     case "advanced":
-      return "Avançado (Livro 3)";
+      return "Advanced (Book 3)";
     default:
-      return "Nível Desconhecido";
+      return "Unknown Level";
   }
 };
