@@ -10,7 +10,7 @@ const ProgressBar = ({ current, total }: ProgressBarProps) => {
   return (
     <div className="w-full mb-8">
       <div className="flex justify-between text-xs text-gray-500 mb-1">
-        <span>Question {current} of {total}</span>
+        <span>Questão {current} de {total}</span>
         <span>{percentage}%</span>
       </div>
       <div className="w-full h-1 bg-gray-200 rounded-full overflow-hidden">

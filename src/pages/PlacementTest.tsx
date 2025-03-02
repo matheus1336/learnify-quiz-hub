@@ -14,13 +14,13 @@ const PlacementTest = () => {
   const [isReviewing, setIsReviewing] = useState(false);
   
   useEffect(() => {
-    // Check if there's any saved progress
+    // Verifica se há algum progresso salvo
     const savedProgress = getProgress();
     if (savedProgress && savedProgress.type === 'placement' && !savedProgress.completed) {
       setCurrentQuestion(savedProgress.currentQuestion);
       setAnswers(savedProgress.answers);
     } else {
-      // Initialize new progress
+      // Inicializa um novo progresso
       saveProgress({
         type: 'placement',
         currentQuestion: 0,
@@ -35,7 +35,7 @@ const PlacementTest = () => {
     newAnswers[currentQuestion] = optionIndex;
     setAnswers(newAnswers);
     
-    // Save progress
+    // Salva o progresso
     saveProgress({
       type: 'placement',
       currentQuestion,
@@ -80,7 +80,7 @@ const PlacementTest = () => {
   };
   
   const handleSubmit = () => {
-    // Mark as completed in storage
+    // Marca como concluído no armazenamento
     saveProgress({
       type: 'placement',
       currentQuestion,
@@ -88,7 +88,7 @@ const PlacementTest = () => {
       completed: true
     });
     
-    // Navigate to results page
+    // Navega para a página de resultados
     navigate("/test-result");
   };
   
@@ -103,7 +103,7 @@ const PlacementTest = () => {
       <main className="flex-grow flex flex-col items-center px-4 py-12">
         <div className="max-w-3xl w-full glass rounded-2xl p-8 animate-fade-in">
           <h2 className="text-2xl font-bold mb-8 text-center">
-            {isReviewing ? "Review Your Answers" : "Placement Test"}
+            {isReviewing ? "Revise Suas Respostas" : "Teste de Nivelamento"}
           </h2>
           
           <ProgressBar 
@@ -130,7 +130,7 @@ const PlacementTest = () => {
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200 active:scale-95"
               }`}
             >
-              Previous
+              Anterior
             </button>
             
             <div className="flex space-x-3">
@@ -139,7 +139,7 @@ const PlacementTest = () => {
                   onClick={handleReview}
                   className="px-5 py-2 bg-secondary text-secondary-foreground rounded-lg font-medium transition-all hover:bg-secondary/90 active:scale-95"
                 >
-                  Review Answers
+                  Revisar Respostas
                 </button>
               )}
               
@@ -153,7 +153,7 @@ const PlacementTest = () => {
                       : "bg-gray-100 text-gray-400 cursor-not-allowed"
                   }`}
                 >
-                  Submit Test
+                  Enviar Teste
                 </button>
               ) : (
                 <button
@@ -165,7 +165,7 @@ const PlacementTest = () => {
                       : "bg-primary text-white hover:bg-primary/90 active:scale-95"
                   }`}
                 >
-                  Next
+                  Próximo
                 </button>
               )}
             </div>

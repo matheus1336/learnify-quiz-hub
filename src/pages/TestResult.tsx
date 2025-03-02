@@ -15,13 +15,13 @@ const TestResult = () => {
     const progress = getProgress();
     
     if (!progress || !progress.completed) {
-      // If no completed test data, redirect to home
+      // Se não houver dados completos do teste, redireciona para a página inicial
       navigate("/");
       return;
     }
     
     if (progress.type === 'placement') {
-      // Calculate score for placement test
+      // Calcula a pontuação para o teste de nivelamento
       const correctAnswers = testData.placementTest.map(q => q.correctAnswer);
       const testScore = calculateScore(progress.answers, correctAnswers);
       const recommendedLevel = getLevelFromScore(testScore);
@@ -30,7 +30,7 @@ const TestResult = () => {
       setLevel(recommendedLevel);
       setLevelTitle(getLevelTitle(recommendedLevel));
     } else if (progress.type === 'book' && progress.bookLevel) {
-      // Calculate score for book test
+      // Calcula a pontuação para o teste do livro
       const correctAnswers = testData.books[progress.bookLevel].questions.map(q => q.correctAnswer);
       const testScore = calculateScore(progress.answers, correctAnswers);
       
@@ -50,7 +50,7 @@ const TestResult = () => {
       <main className="flex-grow flex flex-col items-center justify-center px-4 py-12">
         <div className="max-w-3xl w-full glass rounded-2xl p-8 animate-scale-in">
           <h2 className="text-2xl font-bold mb-4 text-center">
-            Test Results
+            Resultados do Teste
           </h2>
           
           <div className="my-8 flex flex-col items-center">
@@ -81,11 +81,11 @@ const TestResult = () => {
               </svg>
             </div>
             
-            <p className="text-xl mb-1">Your Score: <span className="font-medium">{percentage}%</span></p>
+            <p className="text-xl mb-1">Sua pontuação: <span className="font-medium">{percentage}%</span></p>
             
             {level && (
               <div className="mt-4 text-center">
-                <p className="text-lg text-gray-600 mb-2">Recommended Level:</p>
+                <p className="text-lg text-gray-600 mb-2">Nível Recomendado:</p>
                 <h3 className="text-2xl font-bold text-primary">{levelTitle}</h3>
               </div>
             )}
@@ -93,9 +93,9 @@ const TestResult = () => {
           
           <div className="mt-4 text-center">
             <p className="text-gray-600 mb-6">
-              {score <= 3 && "You're at the beginning of your language journey. The beginner level will help you build a strong foundation."}
-              {score > 3 && score <= 7 && "You have a good understanding of the basics. The intermediate level will help you expand your skills."}
-              {score > 7 && "Excellent work! You have a strong command of the language. The advanced level will help you master complex concepts."}
+              {score <= 3 && "Você está no início da sua jornada de aprendizado. O nível iniciante ajudará você a construir uma base sólida."}
+              {score > 3 && score <= 7 && "Você tem um bom entendimento dos conceitos básicos. O nível intermediário ajudará você a expandir suas habilidades."}
+              {score > 7 && "Excelente trabalho! Você tem um bom domínio do idioma. O nível avançado ajudará você a dominar conceitos complexos."}
             </p>
           </div>
           
@@ -104,7 +104,7 @@ const TestResult = () => {
               to="/" 
               className="px-6 py-3 bg-gray-100 text-gray-700 rounded-lg font-medium transition-all hover:bg-gray-200 active:scale-95 text-center"
             >
-              Back to Home
+              Voltar ao Início
             </Link>
             
             {level && (
@@ -112,7 +112,7 @@ const TestResult = () => {
                 to={`/book-test/${level}`}
                 className="px-6 py-3 bg-primary text-white rounded-lg font-medium transition-all hover:bg-primary/90 active:scale-95 text-center"
               >
-                Start {levelTitle} Test
+                Iniciar Teste {levelTitle}
               </Link>
             )}
           </div>
